@@ -1,4 +1,4 @@
-input.onGesture(Gesture.Shake, function () {
+input.onGesture(Gesture.ScreenUp, function () {
     if (randint(1, 6) == 1) {
         basic.showLeds(`
             . . . . .
@@ -48,4 +48,7 @@ input.onGesture(Gesture.Shake, function () {
             . . . . .
             `)
     }
+})
+input.onGesture(Gesture.Shake, function () {
+    basic.clearScreen()
 })
